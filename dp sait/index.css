@@ -1,0 +1,484 @@
+body {
+  background-color: #efded1;
+}
+
+
+header img {
+  height: 150px;
+  margin-left: -5px;
+  margin-top: -10px;
+}
+
+body {
+  height: 200 px;
+  /*background-image: clearskin.png; */
+  background-size: cover;
+  font-family: math;
+  font-weight: 800;
+  margin-top: 80px;
+  padding: 30px;
+}
+
+main {
+  color: #000000;
+}
+
+header {
+  background-color: #eee1d8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 25px 0 rgb(189, 187, 198);
+}
+
+
+header * {
+  display: inline;
+}
+
+header li {
+  margin: 20px;
+}
+
+header li a {
+  color: #f3f4f8;
+  text-decoration: none;
+}
+
+
+header li:hover {
+  background-color: #dabfaf;
+  display: inline-block;
+  /* Ensures that the background color covers the entire word */
+  padding: 12px 16px;
+}
+
+header li a {
+  color: #303C6C;
+  text-decoration: none;
+  display: inline-block;
+  /* Ensures that the background color covers the entire word */
+  padding: 12px 16px;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F1E4DC;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #303C6C;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #dabfaf;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/** SLIDESHOW **/
+.slideshow,
+.slideshow:after {
+  top: 80px;
+  bottom : 80px;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.slideshow li span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: repeat;
+  opacity: 0;
+  z-index: auto;
+  animation: imageAnimation 48s linear infinite 0s;
+}
+
+.slideshow-container {
+  margin-bottom: 100px; /* Adjust as needed */
+}
+
+
+
+
+
+
+
+
+
+.slideshow li:nth-child(1) span {
+  background-image: url('1.png');
+
+}
+
+.slideshow li:nth-child(2) span {
+  background-image: url("2.png");
+  animation-delay: 12s;
+
+}
+
+.slideshow li:nth-child(3) span {
+  background-image: url("3.png");
+  animation-delay: 24s;
+
+}
+
+.slideshow li:nth-child(4) span {
+  background-image: url("4.png");
+  animation-delay: 36s;
+
+}
+
+
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+
+  8% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+
+  17% {
+    opacity: 1
+  }
+
+  25% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+
+@keyframes titleAnimation {
+  0% {
+    opacity: 0
+  }
+
+  8% {
+    opacity: 1
+  }
+
+  17% {
+    opacity: 1
+  }
+
+  19% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+
+
+/*log in */
+/* Style the icon and adjust its position */
+button i {
+  margin-right: -100px;
+  /* Add some margin to separate the icon from text */
+  width: 20%;
+}
+
+/* Optionally, you can style the button further to match your navigation bar */
+button {
+  background-color: transparent;
+  /* Make the button transparent */
+  border: none;
+  cursor: pointer;
+  font-size: 5cm;
+  color: #fff;
+  /* Set the color to match your navigation bar */
+  width: 10%;
+}
+
+/* Style the image and adjust its size */
+button img {
+  width: 40px;
+  /* Set the desired width */
+  height: auto;
+  /* Maintain aspect ratio */
+  margin-right: -150px;
+  /* Add some margin to separate the icon from text */
+  margin-top: 10px;
+}
+
+/* Optionally, you can style the button further to match your navigation bar */
+button {
+  background-color: transparent;
+  /* Make the button transparent */
+  border: rgb(99, 75, 75);
+  cursor: pointer;
+  font-size: 15px;
+  color: #935252;
+  /* Set the color to match your navigation bar */
+}
+
+button.login-button img {
+  width: 20px;
+  /* Set the desired width */
+  height: auto;
+  /* Maintain aspect ratio */
+  margin-right: 5px;
+  /* Add some margin to separate the icon from text */
+}
+
+/* Style the text */
+button.login-button .login-text {
+  display: none;
+  /* Initially hide the text */
+  background-color: #333;
+  /* Set the background color */
+  padding: 5px;
+  /* Add padding for better visibility */
+  border-radius: 5px;
+  /* Optional: add rounded corners */
+  color: #fff;
+  /* Set the text color */
+}
+
+/* Show the text on hover */
+button.login-button:hover .login-text {
+  display: inline-block;
+}
+
+/* Optionally, you can style the button further to match your navigation bar */
+button.login-button {
+  background-color: transparent;
+  /* Make the button transparent */
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  /* Set the color to match your navigation bar */
+}
+
+
+
+button.login-button img {
+  width: 20px;
+  /* Set the desired width */
+  height: auto;
+  /* Maintain aspect ratio */
+  margin-right: 5px;
+  /* Add some margin to separate the icon from text */
+}
+
+/* Style the text */
+button.login-button .login-text {
+  display: none;
+  /* Initially hide the text */
+  background-color: #333;
+  /* Set the background color */
+  padding: 5px;
+  /* Add padding for better visibility */
+  border-radius: 5px;
+  /* Optional: add rounded corners */
+  color: #fff;
+  /* Set the text color */
+}
+
+/* Show the text on hover */
+button.login-button:hover .login-text {
+  display: inline-block;
+}
+
+/* Optionally, you can style the button further to match your navigation bar */
+button.login-button {
+  background-color: transparent;
+  /* Make the button transparent */
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  /* Set the color to match your navigation bar */
+}
+
+
+
+
+
+
+.modal label {
+  background-color: #dabfaf;
+  display: block;
+  /* Make labels block-level elements */
+  margin-bottom: 0px;
+  /* Add spacing between labels */
+  background-color: #f3e6dd;
+  /* Set the background color */
+  color: #997272;
+  /* Set the text color */
+  padding: -10px;
+  /* Add padding for better visibility */
+  border-radius: 2px;
+  /* Optional: add rounded corners */
+}
+
+/* Optionally, you can adjust the input fields' styles for better alignment */
+.modal input {
+  width: 15%;
+  /* Make input fields fill the container */
+  background-color: transparent;
+  /* Set the background color */
+  padding: 8px;
+  /* Add padding for better appearance */
+  box-sizing: border-box;
+  /* Include padding and border in the element's total width and height */
+}
+
+
+.container button {
+  background-color: #a29393;
+  /* Example button background color */
+  color: #efc8c8(206, 196, 196);
+  padding: 10px 15px;
+  /* Adjust padding as needed */
+  width: 100px;
+  height: 29px;
+  margin-top: 5px;
+  border-radius: 10px;
+  /* Optional: add rounded corners */
+  border: none;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: #986969;
+  /* Change the background color on hover */
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #cbb19e;
+  /* Fallback color */
+  background-color: rgba(53, 34, 34, 0.161);
+  /* Black w/ opacity */
+  padding-top: 80px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #f3e6dd;
+  margin: 50px auto;
+  /* 15% from the top and centered */
+  border: 1px solid #eec4a6;
+  width: 20%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #9f9090;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+
+
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ClearSkin</title>
+  <link rel="icon" type="image/x-icon" href="favicon.png" />
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+
+    
+    <div class="slideshow-container">
+      <ul class="slideshow">
+        <!-- Slides for the slideshow -->
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+      </ul>
+    </div>
+
+    <a href="index.html"><img src="logo.png"></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Начало</a></li>
+        <li><a href="zafirmata.html">За фирмата</a></li>
+        <li class="dropdown">
+          <a href="#">Каталог</a>
+          <ul class="dropdown-content">
+            <li><a href="#">Plan 1</a></li>
+            <li><a href="#">Plan 2</a></li>
+            <li><a href="#">Plan 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Промоция</a></li>
+        <li><a href="#">Контакти</a></li>
+        <li><a href="#">Автор на сайта</a></li>
+      </ul>
+    </nav>
+    <!-- Button to open the modal login form -->
+    <button onclick="document.getElementById('id01').style.display='block'"><img src="log.png" alt="Login Icon"></button>
+
+    <!-- The Modal -->
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+      <!-- Modal Content -->
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer"></div>
+
+        <div class="container">
+          <label for="uname"><b>Потребителско име</b></label>
+          <input type="text" placeholder="Въведете потребителското име" name="uname" required>
+
+          <label for="psw"><b>Парола</b></label>
+          <input type="password" placeholder="Въведете парола" name="psw" required>
+
+          <button type="submit">Вход</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Запомни ме
+          </label>
+        </div>
+
+        <div class="container" style="background-color:#eee1d8">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Назад</button>
+        </div>
+      </form>
+    </div>
+  </header>
+
+  
+
+
+
+  <footer>
+    <!-- Your footer content goes here -->
+    <p>&copy; 2024 ClearSkin. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
